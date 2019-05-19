@@ -1,0 +1,18 @@
+** Implementing Basic Authentication with Spring Boot and Spring Security**
+		
+		- Basic auth for every request.
+		- JWT  - Json Web Token
+		- Spring security : enable maven dependency : every request would ask user/pwd
+		- @EnableGlobalMethodSecurity(securedEnabled = true)
+		 
+		 
+		- this is an encoded version of username and password
+		 authorization: Basic dXNlcjo2MzI4NTdjYS1kMGFkLTQ0NWEtODg4OS03OTNkZTEyOTI5NGY=
+		 
+		- cookie: JSESSIONID=1DB34C664E57873E803EF96FD055A674
+		- csrf in spring boot
+		- Htpp intercepters in ui - used to avoid addig headers to all requests.
+		- pipe and map for login
+		- use of sprintf npm i sprintf-js --save
+		
+	

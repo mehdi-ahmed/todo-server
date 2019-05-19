@@ -1,0 +1,65 @@
+	***03 Getting Hands on With Angular***
+	
+		- Some ng commands:
+			- ng lint : Code standards. (tslint.json)
+			
+			- ng build : creates dist folder. Used for deployment.
+				dist folder can be placed in a web-server.
+				
+			- ng test : Jasmin/Karma tests	
+				- karma.conf.js is the config file.
+				- Spec files.
+				
+			- ng e2e : end to end tests. Will laucnhe the app in same port.		
+				- will create e2e folder.
+				
+		
+		- Some important Files and folders:
+			- node_modules
+			- package.json
+			- tslint.json
+			
+		- Components have 3 parts : Template(html), css and code.
+			- All these are declared in the component decorator.
+			Example : 
+			- In ts file : title = 'welcome'; 
+			- In html file {{ title }}	
+			
+			- In the decorator, instead of including the entire html file, you 
+			can add html tags directly. Example : 		
+				 - template: '<h1>{{ title }}</h1>'
+		
+		-ng generate
+			- λ ng generate component welcome
+			
+		- Login page component
+		- Login action button - Event Binding - Adding click event on Login Page
+		- Using ngModel with 2 Way Data Binding in Login Page ( [(ngModel)]="username")
+		
+		- ng-if for validation
+		- Routes for Login Welcome and Error Components
+			- use routerLink instead a href for links
+		- Error component when bad url routing 404
+		- Router parameters: name parameters
+		- Domain object and Date format with pipe.
+		
+		- Angular modules.
+		- Use of bootstrap for footer and header
+		- Installing ng-bootstrap - no need to install jquery 
+			- npm install --save @ng-bootstrap/ng-bootstrap
+			- import it as a module in app.module.ts
+			- install css - λ npm install bootstrap@4.0.0 --save
+				--save command will save the dependency in our angular app inside package.json file.
+				- in angular.json add this : 
+				"styles": [
+					"src/styles.css",
+					"node_modules/bootstrap/dist/css/bootstrap.min.css"
+					],
+		- !!! User routerLink better than a href because it load the entire page !!!!
+		
+		- ng generate service service/authentication
+			- constructor injected.
+			
+		- session Storage : When you close the browser, the session is refreshed.	
+		- Tokens and logout
+		- Securing Components using Route Guards - Part 1

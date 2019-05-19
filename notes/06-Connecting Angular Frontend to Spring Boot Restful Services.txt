@@ -1,0 +1,27 @@
+** Connecting Angular Frontend to Spring Boot Restful Services **
+
+	- Angular Observables
+		- Asynchronous, wait for the response
+		- All http should be called asynchronously..
+		https://angular.io/guide/observables
+		
+		- CORS policy : 2 web servers are calling each others.
+		- spring boot fix
+		- response => Arrow function
+		- HTML form
+			-  (ngModelChange)
+		- data picker from angular material
+		- Restfulbackend : return location after POST with URI uri = ServletUriComponentsBuilder.
+		- REST best practices : 
+		- When a resource is created do not send 200 code
+		- Never send a server error 500 when there is something wrong
+		- Prefer /users/1 to /user/1
+		- Use nouns for resources. Exception to /search
+		- Github :  PUT /gists/{id}/star
+					DELETE /gists/{id/star
+		- date picker fron angular bootstrap			
+		- form tag with submit button to valdiate
+		
+
+
+

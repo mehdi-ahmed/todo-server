@@ -1,0 +1,41 @@
+*** 08 Connecting Spring Security and Spring Boot with JWT Framework ***
+	
+		- Basic Auth : No expiration time.
+		- No user details.
+			-> Custom token system ? 
+			
+		JWT ==> Standard RFC 7519
+		JWT ==> Can contain User datails and Authorizations.
+		- From https://jwt.io/
+		 - "JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties."
+		 
+		 - Header, Payload data and signature(secret key)
+		 - You can paste the jwt token inside the https://jwt.io/ and retrieve data.
+		 
+		 Example : 
+			token eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtZWhkaSIsImV4cCI6MTU1ODc4MTk4NiwiaWF0IjoxNTU4MTc3MTg2fQ.YyaMOddvW10XWVIuJnd1ZKV76O0V3_
+			iJACPX7gKQD2GQViBQ1rXcLgBkCbEcD05S8jNcgKtCIFa5jrVwIe40Sw
+		 
+		 
+		 
+		  results : 
+					{
+					"alg": "HS512"
+					}
+		 	 
+				    {
+					  "sub": "mehdi",
+					  "exp": 1558781986,
+					  "iat": 1558177186
+					}
+			- You need to user in the header request :
+				authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtZWhkaSIsImV4cCI6MTU1ODc4MTk4NiwiaWF0IjoxNTU4MTc3MTg2fQ.YyaMOd
+				dvW10XWVIuJnd1ZKV76O0V3_iJACPX7gKQD2GQViBQ1rXcLgBkCbEcD05S8jNcgKtCIFa5jrVwIe40Sw
+				
+			- You can refresh token
+			
+	
+
+
+			
+		

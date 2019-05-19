@@ -1,0 +1,19 @@
+*** 02- Quick Overview of Modern JavaScript TypeScript and Angular ***
+
+	- npm: JavaScript package manager ( similar to maven somehow)
+	- TypeScript : JavaScript + strong typing.
+	- Modern JavaScript : ES2016 - ES6
+		- ES - EC - EcmacScript is a standard, JavaScript is the implementation) 
+		- TypeScript : Object ortiented.
+		- JavaScript is loosly typed. Example : 
+			var value;
+			value = 5;
+			value = "Five";
+			
+	Angular CLI usefull commands :
+		- ng generate
+		- ng new : creates new workspace
+		- ng run
+		- ng lint
+		- ng test
+		- ng update	: updates dependencies
